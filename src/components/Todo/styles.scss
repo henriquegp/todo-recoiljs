@@ -1,0 +1,33 @@
+.todo-container {
+  width: 100%;
+  position: relative;
+
+  input {
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    border-bottom: 1px solid #90A4AE;
+    font-size: 20px;
+    padding: 10px 15px;
+    outline: none;
+    background: transparent;
+
+    &:focus ~ .underline {
+      width: 100%;
+      display: block;
+      height: 2px;
+    }
+  }
+
+  .underline {
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -1px;
+    width: 0px;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    transition: width .2s ease-out;
+    height: 0px;
+  }
+}

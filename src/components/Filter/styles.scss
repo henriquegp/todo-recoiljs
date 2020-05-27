@@ -1,0 +1,32 @@
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9px;
+  font-size: 14px;
+
+  & > ul {
+    display: block;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-left: 10px;
+
+      & > button {
+        cursor: pointer;
+        transition: color .3s;
+        border: none;
+        background: transparent;
+        
+        &:hover {
+          color: var(--primary-color);
+        }
+      } 
+    }
+  }
+}
+
+.filter-selected {
+  color: var(--primary-color);
+  font-weight: 600;
+}
